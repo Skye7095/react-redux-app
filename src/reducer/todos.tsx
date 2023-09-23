@@ -8,7 +8,7 @@ interface Action {
   text: string;
 }
 
-const counter = (state = [], action: Action) => {
+const todos = (state = [], action: Action) => {
   switch(action.type) {
     case "ADD_TODO":
       return [...state, action.text];
@@ -17,4 +17,4 @@ const counter = (state = [], action: Action) => {
   }
 }
 
-export default counter;
+export default todos;
